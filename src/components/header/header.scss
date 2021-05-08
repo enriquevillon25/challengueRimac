@@ -1,0 +1,42 @@
+
+
+.container__header{
+    background: transparent;
+    border: 1px solid #E4E8F7;
+    padding: 2% 8%;
+    justify-content: space-between;
+    .logo{
+        width: 14%;
+        cursor: pointer;
+        @media screen and (max-width:580px){
+            width: 20%;
+        }
+    }
+    .subcontainer__right{
+        gap:20px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        .question__user{
+            @media screen and (max-width:580px){
+                display: none;
+            }
+        }
+        .contact{
+            gap: 8px;
+            .letter__call{
+                @media screen and (min-width:581px){
+                    display: none;
+                }
+                cursor: pointer;
+            }
+            .number{
+                @media screen and (max-width:580px){
+                    display: none;
+                }
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

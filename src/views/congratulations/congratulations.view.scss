@@ -1,0 +1,19 @@
+@import '../../styles.scss';
+.subcontainer__congrat{ 
+    width: 80%;
+    margin: auto;
+    gap: 15px;
+    margin-top: 15%;
+    @media screen and (max-width:580px) {
+        
+        margin: auto;
+    }
+}
+.image__congrats{
+    width: 60%; 
+    @media screen and (max-width:580px) {
+        width: 30%;
+        margin: auto;
+    }
+    margin: 20% 0 20% auto;
+}

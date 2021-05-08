@@ -1,0 +1,109 @@
+@import '../../styles.scss';
+.subcontainer__quotation{
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    row-gap: 10px;
+}
+
+.subcontainer__arrowback{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subcontainer__uptop{
+    display: flex;
+    gap:45px;
+    .subcontainer__top{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 15px;
+        @media screen and (max-width: 580px) {
+           width: 100%;
+        }
+    }
+    @media screen and (max-width: 580px) {
+        flex-direction: column;
+     }
+}
+.help{
+    width: 40%;
+    @media screen and (max-width: 580px) {
+        width: 100%;
+     }
+}
+.subcontainer-help{
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 580px) {
+        justify-content: flex-end !important;
+        display: flex;
+        flex-direction: row-reverse !important;
+        // perdón por usar important pero el tiempo me gana :((
+        align-items: start;
+        gap: 18px;
+        background: #F7F8FC;
+        border-radius: 8px;
+        padding: 5%;
+     }
+    
+}
+.subcontainer__gas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subcontainer__suma{
+    display: flex;
+    justify-content: space-between;
+    .input__suma{
+        border: 1px solid #C5CBE0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        @media screen and (max-width:580px){
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:580px){
+      flex-direction: column;
+        gap: 20px;
+    }
+   
+}
+.subcontainer__suma--letter{
+    @media screen and (max-width:580px){
+        
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+
+      }
+}
+.subcontainer__down{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    @media screen and (max-width: 580px) {
+        width: 100%;
+     }
+}
+.subcontainer__minmax{
+    display: flex;
+    justify-content: space-between;
+
+}
+.button__primary{
+    width: 50%;
+}
+
+.box-radios{
+    gap:10px;
+    align-items: center;
+}

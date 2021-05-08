@@ -1,0 +1,144 @@
+@import '../../styles.scss';
+.subcontainer__quotation{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    row-gap: 10px;
+  
+}
+
+
+.subcontainer__arrowback{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subcontainer__top{
+    display: grid;
+    grid-template-areas: 
+    "placa monto"
+    "coberturas monto"
+    "coberturas .";
+    grid-gap: 10%;
+    @media screen and (max-width: 580px) {
+        grid-template-areas:    "placa"
+                                "coberturas"
+                                "monto";
+                                grid-gap: 5%;
+    }
+}
+.subcontainer__top--info--left{
+    border: 3px solid #F0F2FA;
+    box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    grid-area: placa;
+    justify-content: space-around;
+    .letter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+.toy__rimac{
+    width: 20%;
+    
+}
+
+.toy__sticker{
+
+    width: 20%;
+    
+    @media screen and (max-width: 580px) {
+        display: none;
+    }
+}
+
+.subcontainer__top--info--rigth{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    grid-area: monto;
+    @media screen and (max-width: 580px) {
+       flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.letter-right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media screen and (max-width: 580px) {
+       display: none;
+    }
+}
+
+.box-tabs{
+    border-bottom: 1px solid #E4E8F7;
+    text-align: center;
+    .tabs{
+        padding: 4%;
+    }
+}
+// .subcontainer__uptop{
+//     display: flex;
+//     gap:45px;
+//     .subcontainer__top{
+//         display: flex;
+//         flex-direction: column;
+//         width: 50%;
+//         gap: 15px;
+//     }
+// }
+// .help{
+//     width: 40%;
+
+// }
+// .subcontainer-help{
+//     display: grid;
+//     grid-template-columns: 60% 40%;
+// }
+// .subcontainer__gas{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }
+// .subcontainer__suma{
+//     display: flex;
+//     justify-content: space-between;
+//     .input__suma{
+//         border: 1px solid #C5CBE0;
+//         box-sizing: border-box;
+//         border-radius: 8px;
+//         display: flex;
+//         align-items: center;
+//     }
+// }
+// .subcontainer__down{
+//     width: 50%;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 25px;
+// }
+// .subcontainer__minmax{
+//     display: flex;
+//     justify-content: space-between;
+
+// }
+// .button__primary{
+//     width: 50%;
+// }
+
+// .subcontainer__top--info{
+//     border: 3px solid #F0F2FA;
+//     border-radius: 12px;
+//     display: flex;
+//     flex-direction: row;
+//     &--left{
+//         display: flex;
+//         flex-direction: column;
+//     }
+// }

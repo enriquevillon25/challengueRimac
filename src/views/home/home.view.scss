@@ -1,0 +1,53 @@
+@import '../../styles.scss';
+
+.container--leftbar{
+    background: #ECF0FF;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.subcontainer__form{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media screen and (max-width:580px){
+        width: 90%;
+       margin: 5% auto;
+    }
+}
+
+.subcontainer__terms{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.select__document{
+    
+}
+.subcontainer__intro{
+    width: 50%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .box__titles{
+        gap: 10px;
+    }
+    @media screen and (max-width:580px){
+        flex-direction: row-reverse;
+        margin: auto;
+        width: 90%;
+        align-items: flex-start;
+    }
+}
+.image__intro{
+    width: 80%;
+     @media screen and (max-width:580px){
+        width: 40%;
+    }
+}
